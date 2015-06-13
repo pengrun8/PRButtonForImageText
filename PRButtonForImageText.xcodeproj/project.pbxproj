@@ -14,6 +14,8 @@
 		EC46803A1B2ACD75005B3620 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC4680391B2ACD75005B3620 /* Images.xcassets */; };
 		EC46803D1B2ACD75005B3620 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC46803B1B2ACD75005B3620 /* LaunchScreen.xib */; };
 		EC4680491B2ACD75005B3620 /* PRButtonForImageTextTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4680481B2ACD75005B3620 /* PRButtonForImageTextTests.m */; };
+		EC4680541B2AD311005B3620 /* UIButton+PRUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = EC4680531B2AD311005B3620 /* UIButton+PRUtils.m */; };
+		F122A88D1B2ADFD700C0D756 /* test.png in Resources */ = {isa = PBXBuildFile; fileRef = F122A88C1B2ADFD700C0D756 /* test.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6BAE29B09F03FADB483809E0 /* SuggestedColors.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = SuggestedColors.plist; sourceTree = "<group>"; };
 		EC4680291B2ACD75005B3620 /* PRButtonForImageText.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PRButtonForImageText.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC46802D1B2ACD75005B3620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC46802E1B2ACD75005B3620 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -40,6 +43,9 @@
 		EC4680421B2ACD75005B3620 /* PRButtonForImageTextTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PRButtonForImageTextTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC4680471B2ACD75005B3620 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC4680481B2ACD75005B3620 /* PRButtonForImageTextTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PRButtonForImageTextTests.m; sourceTree = "<group>"; };
+		EC4680521B2AD311005B3620 /* UIButton+PRUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PRUtils.h"; sourceTree = "<group>"; };
+		EC4680531B2AD311005B3620 /* UIButton+PRUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PRUtils.m"; sourceTree = "<group>"; };
+		F122A88C1B2ADFD700C0D756 /* test.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = test.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,14 +87,18 @@
 		EC46802B1B2ACD75005B3620 /* PRButtonForImageText */ = {
 			isa = PBXGroup;
 			children = (
+				F122A88C1B2ADFD700C0D756 /* test.png */,
 				EC4680301B2ACD75005B3620 /* AppDelegate.h */,
 				EC4680311B2ACD75005B3620 /* AppDelegate.m */,
 				EC4680331B2ACD75005B3620 /* ViewController.h */,
 				EC4680341B2ACD75005B3620 /* ViewController.m */,
+				EC4680521B2AD311005B3620 /* UIButton+PRUtils.h */,
+				EC4680531B2AD311005B3620 /* UIButton+PRUtils.m */,
 				EC4680361B2ACD75005B3620 /* Main.storyboard */,
 				EC4680391B2ACD75005B3620 /* Images.xcassets */,
 				EC46803B1B2ACD75005B3620 /* LaunchScreen.xib */,
 				EC46802C1B2ACD75005B3620 /* Supporting Files */,
+				6BAE29B09F03FADB483809E0 /* SuggestedColors.plist */,
 			);
 			path = PRButtonForImageText;
 			sourceTree = "<group>";
@@ -199,6 +209,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F122A88D1B2ADFD700C0D756 /* test.png in Resources */,
 				EC4680381B2ACD75005B3620 /* Main.storyboard in Resources */,
 				EC46803D1B2ACD75005B3620 /* LaunchScreen.xib in Resources */,
 				EC46803A1B2ACD75005B3620 /* Images.xcassets in Resources */,
@@ -220,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EC4680351B2ACD75005B3620 /* ViewController.m in Sources */,
+				EC4680541B2AD311005B3620 /* UIButton+PRUtils.m in Sources */,
 				EC4680321B2ACD75005B3620 /* AppDelegate.m in Sources */,
 				EC46802F1B2ACD75005B3620 /* main.m in Sources */,
 			);
@@ -418,6 +430,7 @@
 				EC46804E1B2ACD75005B3620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EC46804F1B2ACD75005B3620 /* Build configuration list for PBXNativeTarget "PRButtonForImageTextTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +439,7 @@
 				EC4680511B2ACD75005B3620 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
